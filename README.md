@@ -78,6 +78,8 @@ cd ../frontend
 
 npm start
 
+---
+
 ## Uso
 - Asegúrate de que tanto el backend como el frontend estén en ejecución.
 - Abre la aplicación React en tu navegador en http://localhost:3000.
