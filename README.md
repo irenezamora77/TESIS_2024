@@ -1,7 +1,8 @@
-<<<<<<< HEAD
+
 # TESIS_2024
+
 SISTEMA DE RECONOCIMIENTO DE GESTOS DE LA LENGUA DE SEÑAS - FACULTAD DE INGENIERÍA
-=======
+
 # Traductor de Señas - BioSonic
 
 El **Traductor de Señas - BioSonic** es una aplicación de detección de señas en tiempo real basada en visión por computadora. Utiliza un modelo YOLO para detectar señas específicas, las traduce a texto y reproduce su significado en audio.
@@ -83,4 +84,3 @@ npm start
 - Permite el acceso a tu cámara para que el sistema pueda capturar imágenes.
 - Observa el video en tiempo real con cuadros delimitadores y etiquetas de las señas detectadas.
 - Escucha la traducción en audio de las señas detectadas.
->>>>>>> dev
