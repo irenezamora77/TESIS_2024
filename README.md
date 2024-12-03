@@ -1,11 +1,12 @@
 
 # TESIS_2024
 
-SISTEMA DE RECONOCIMIENTO DE GESTOS DE LA LENGUA DE SEÑAS - FACULTAD DE INGENIERÍA
+SISTEMA DE RECONOCIMIENTO DE GESTOS DE LA LENGUA DE SEÑAS ARGENTINO- FACULTAD DE INGENIERÍA
 
 # Traductor de Señas - BioSonic
 
-El **Traductor de Señas - BioSonic** es una aplicación de detección de señas en tiempo real basada en visión por computadora. Utiliza un modelo YOLO para detectar señas específicas, las traduce a texto y reproduce su significado en audio.
+Este traductor detecta la seña, y la convierte en texto y audio.
+
 
 ## Tabla de Contenidos
 - [Descripción General](#descripción-general)
@@ -20,7 +21,7 @@ El **Traductor de Señas - BioSonic** es una aplicación de detección de señas
 
 ## Descripción General
 
-El proyecto combina un backend desarrollado con **FastAPI** para realizar inferencias con el modelo YOLO y un frontend en **React** para interactuar con el usuario, mostrando resultados en tiempo real. También incluye un sistema de conversión de texto a voz.
+El proyecto combina un backend desarrollado con **FastAPI** para realizar inferencias con el modelo YOLO y un frontend en **React** para interactuar con el usuario, mostrando resultados. También incluye la conversión de texto a voz.
 
 ---
 
@@ -28,14 +29,13 @@ El proyecto combina un backend desarrollado con **FastAPI** para realizar infere
 
 - **Detección en tiempo real**: Detecta señas en video utilizando un modelo YOLO entrenado.
 - **Traducción automática**: Convierte las señas detectadas a texto y las reproduce mediante audio.
-- **Interfaz moderna**: Una aplicación web diseñada para ser intuitiva y fácil de usar.
 - **Soporte para detecciones personalizadas**: Muestra cuadros delimitadores en video con colores personalizados según la seña detectada.
 
 ---
 
 ## Requisitos Previos
 
-Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
+Antes de comenzar, hay que asegúrase de tener instalados los siguientes componentes:
 
 ### Software
 - **Python 3.8+**
@@ -57,12 +57,11 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
 
 ### Backend (FastAPI)
 
-1. Clona el repositorio:
+1. Clonar el repositorio:
 
-   git clone https://github.com/tu_usuario/tu_repositorio.git
-   cd tu_repositorio/backend
+   git clone https://github.com/irenezamora77/TESIS_2024.git
 
-2. Instala las dependencias necesarias:
+2. Instalar las dependencias necesarias:
 
 pip install fastapi uvicorn numpy opencv-python pyttsx3 ultralytics
 
@@ -70,7 +69,7 @@ pip install fastapi uvicorn numpy opencv-python pyttsx3 ultralytics
 
 uvicorn app:app --host 0.0.0.0 --port 8000
 
-4. Navega a la carpeta del frontend:
+4. Navegar a la carpeta del frontend:
 
 cd ../frontend
 
@@ -81,8 +80,8 @@ npm start
 ---
 
 ## Uso
-- Asegúrate de que tanto el backend como el frontend estén en ejecución.
-- Abre la aplicación React en tu navegador en http://localhost:3000.
-- Permite el acceso a tu cámara para que el sistema pueda capturar imágenes.
-- Observa el video en tiempo real con cuadros delimitadores y etiquetas de las señas detectadas.
-- Escucha la traducción en audio de las señas detectadas.
+- Asegúrar de que tanto el backend como el frontend estén en ejecución.
+- Abrir la aplicación React en el navegador en http://localhost:3000.
+- Permitir el acceso a la cámara para que el sistema pueda capturar imágenes.
+- Observar el video con cuadros delimitadores y etiquetas de las señas detectadas.
+- Escuchar la traducción en audio de las señas detectadas.
