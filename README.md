@@ -59,23 +59,15 @@ Antes de comenzar, hay que asegúrase de tener instalados los siguientes compone
 
 1. Clonar el repositorio:
 
-   git clone https://github.com/irenezamora77/TESIS_2024.git
+git clone https://github.com/irenezamora77/TESIS_2024.git
 
 2. Instalar las dependencias necesarias:
 
 pip install fastapi uvicorn numpy opencv-python pyttsx3 ultralytics
 
-3. Inicia el servidor:
+3. Inicia la aplicación React:
 
-uvicorn app:app --host 0.0.0.0 --port 8000
-
-4. Navegar a la carpeta del frontend:
-
-cd ../frontend
-
-5. Inicia la aplicación React:
-
-npm start
+npm run start
 
 ---
 
