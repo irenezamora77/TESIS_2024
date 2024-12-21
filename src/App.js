@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"; // Importar React y hooks necesarios
 import logo from './logo.png'; // Importar el logo
+import logo2 from './logo2.png'; // Importar el logo
 
 const App = () => {
     const videoRef = useRef(null); // Referencia para el elemento de video
@@ -224,8 +225,13 @@ const App = () => {
 
 
             <footer style={{ marginTop: "40px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                <img src={logo} alt="Logo" style={{ height: "50px", width: "auto" }} />
-                <h2 style={{ fontSize: '18px', color: '#fff', marginTop: '10px', fontFamily: "Roboto, sans-serif"}}>Proyecto Final - Irene Zamora</h2>
+                <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                    <img src={logo} alt="Logo" style={{ height: "50px", width: "auto", marginRight: "10px" }} />
+                    <img src={logo2} alt="Logo2" style={{ height: "60px", width: "auto" }} />
+                </div>
+                <h2 style={{ fontSize: '25px', color: '#fff', marginTop: '30px', fontFamily: "Roboto, sans-serif" }}>
+                    Proyecto Final - Irene Zamora
+                </h2>
             </footer>
         </div>
     );
